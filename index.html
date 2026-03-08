@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food Delivery App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🍔 Cloud Food Delivery</h1>
+<p>Order your favorite food instantly</p>
+</header>
+
+<section>
+<h2>Menu</h2>
+<div id="menu"></div>
+</section>
+
+<section class="order-section">
+
+<h2>Place Your Order</h2>
+
+<div class="order-form">
+
+<input type="text" id="user" placeholder="Enter Your Name">
+
+<select id="food">
+<option value="">Select Food</option>
+<option value="Pizza">Pizza</option>
+<option value="Burger">Burger</option>
+<option value="Pasta">Pasta</option>
+</select>
+
+<input type="number" id="quantity" placeholder="Quantity">
+
+<button onclick="placeOrder()">Place Order</button>
+
+</div>
+
+<p id="result"></p>
+
+</section>
+
+<footer>
+<p>Powered by AWS | S3 • API Gateway • Lambda • DynamoDB</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
